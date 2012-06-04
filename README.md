@@ -1,7 +1,7 @@
-# nexr-hive-udf
+# NexR Hive UDFs
 
 ## About
-nexr-hive-udf is a collection of user defined functions for Hive.
+NexR Hive UDFs is a collection of user defined functions for Hive.
 
 ## License
 Apache licensed.
@@ -20,11 +20,11 @@ Apache licensed.
 ### hive-site.xml
     <property>
         <name>hive.aux.jars.path</name>
-        <value>file:///home/path/dir/nexr-hive-udf-[VERSION].jar</value>
+        <value>file:///path/to/nexr-hive-udf-[VERSION].jar</value>
     </property>
 
 ### Registering the UDFs
-    hive> add jar /path/to/nexr-platform-hive-udf-VERSION.jar;
+    hive> add jar /path/to/nexr-hive-udf-[VERSION].jar;
     hive> CREATE TEMPORARY FUNCTION nvl AS 'com.nexr.platform.hive.udf.GenericUDFNVL';
     hive> CREATE TEMPORARY FUNCTION decode AS 'com.nexr.platform.hive.udf.GenericUDFDecode';
     hive> CREATE TEMPORARY FUNCTION nvl2 AS 'com.nexr.platform.hive.udf.GenericUDFNVL2';
