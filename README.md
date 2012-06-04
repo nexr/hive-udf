@@ -42,6 +42,7 @@ Apache licensed.
     hive> CREATE TEMPORARY FUNCTION sysdate AS 'com.nexr.platform.hive.udf.UDFSysDate';
     hive> CREATE TEMPORARY FUNCTION populate AS 'com.nexr.platform.hive.udf.GenericUDTFPopulate';
     hive> CREATE TEMPORARY FUNCTION dedup AS 'com.nexr.platform.hive.udf.GenericUDAFDedup';
+    hive> CREATE TEMPORARY FUNCTION lnnvl AS 'com.nexr.platform.hive.udf.GenericUDFLnnvl';
 
 ## Usage of Hive UDFs
 See the details at [Project Wiki](https://github.com/nexr/hive-udf/wiki).
