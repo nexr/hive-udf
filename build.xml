@@ -1,0 +1,8 @@
+<project name="nexr-hive-udf" default="package">
+  <property name="plugin.libname" value="nexr-hive-udf"/>
+  <property name="plugin.title" value="nexr-hive-udf"/>
+  <property name="plugin.version" value="0.1-SNAPSHOT"/>
+  <property name="plugin.vendor" value="NexR"/>
+  <property name="function.sql.prefix" value="nexr_"/>
+  <import file="${hive.install.dir}/scripts/pdk/build-plugin.xml"/>
+</project>
