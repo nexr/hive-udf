@@ -47,5 +47,5 @@ Apache licensed.
 See the details at [Project Wiki](https://github.com/nexr/hive-udf/wiki).
 
 ## References
-* Apache Hive, http://hive.apache.org/
-* Oracle 11g SQL Functions, [http://docs.oracle.com/cd/B28359_01/server.111/b28286/functions001.htm#i88893]
+* [Apache Hive](http://hive.apache.org/)
+* [Oracle 11g SQL Functions](http://docs.oracle.com/cd/B28359_01/server.111/b28286/functions001.htm#i88893)
