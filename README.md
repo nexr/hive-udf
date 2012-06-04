@@ -43,6 +43,7 @@ Apache licensed.
     hive> CREATE TEMPORARY FUNCTION populate AS 'com.nexr.platform.hive.udf.GenericUDTFPopulate';
     hive> CREATE TEMPORARY FUNCTION dedup AS 'com.nexr.platform.hive.udf.GenericUDAFDedup';
     hive> CREATE TEMPORARY FUNCTION lnnvl AS 'com.nexr.platform.hive.udf.GenericUDFLnnvl';
+    hive> CREATE TEMPORARY FUNCTION substr AS 'com.nexr.platform.hive.udf.UDFSubstrForOracle';
 
 ## Usage of Hive UDFs
 See the details at [Project Wiki](https://github.com/nexr/hive-udf/wiki).
