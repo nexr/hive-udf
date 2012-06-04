@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.nexr</groupId>
 	<artifactId>nexr-hive-udf</artifactId>
-	<version>0.1-SNAPSHOT</version>
+	<version>0.1</version>
 	<name>nexr-hive-udf</name>
 	<description>nexr-hive-udf</description>
 
