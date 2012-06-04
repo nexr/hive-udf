@@ -50,7 +50,7 @@ import org.apache.hive.pdk.HivePdkUnitTests;
  * 
  * 
  */
-@Description(name = "trunc", value = "_FUNCdate, format) " +
+@Description(name = "trunc", value = "_FUNC_(date, [format_mask]) " +
 		"- Returns a date in string truncated to a specific unit of measure.", extended = "Example:\n"
 		+ " > SELECT _FUNC_('2011-08-02 01:01:01') FROM src ;\n returns '2011-08-02 00:00:00' ")
 @HivePdkUnitTests(setup = "create table dual_data (i int); "

@@ -162,13 +162,24 @@ Apache licensed.
 ### trunc
     hive> DESCRIBE FUNCTION EXTENDED trunc;      
     OK
-    _FUNCdate, format) - Returns a date in string truncated to a specific unit of measure.
+    trunc(date, [format_mask]) - Returns a date in string truncated to a specific unit of measure.
     
     Example:
      > SELECT trunc('2011-08-02 01:01:01') FROM src ;
      returns '2011-08-02 00:00:00' 
 
 ### sysdate
+    hive> DESCRIBE FUNCTION EXTENDED sysdate;
+    OK
+    sysdate() - Returns the current date and time as a value in 'yyyy-MM-dd HH:mm:ss' formatsysdate(dateFormat) - Returns the current date and time as a value in given formatsysdate(dateFormat, num_days) - Returns the date that is num_days after current date in given date format
+    
+    Example:
+      > SELECT sysdate() FROM src LIMIT 1;
+      2011-06-13 13:47:36  
+      > SELECT sysdate('yyyyMMdd') FROM src LIMIT 1;
+      20110613  
+      > SELECT sysdate('yyyyMMdd',1) FROM src LIMIT 1;
+      20110614
 
 ### populate
 
