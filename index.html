@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Hive UDFs : A collection of Hive UDFs." />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Hive UDFs</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/nexr/hive-udf">View on GitHub</a>
+
+          <h1 id="project_title">Hive UDFs</h1>
+          <h2 id="project_tagline">A collection of Hive UDFs.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/nexr/hive-udf/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/nexr/hive-udf/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h2>About</h2>
+
+<p>NexR Hive UDFs is a collection of user defined functions for <a href="http://hive.apache.org">Apache Hive</a>. This project has been developed at <a href="http://www.nexr.com">NexR</a> and open-sourced under Apache license.</p>
+
+<h2>License</h2>
+
+<p>Apache licensed.</p>
+
+<h2>Quickstart</h2>
+
+<pre><code>$ git clone https://github.com/nexr/hive-udf.git
+$ cd hive-udf
+$ mvn clean package
+or
+$ ant -Dhive.install.dir=../hive/build/dist clean package
+</code></pre>
+
+<h2>Run the tests using Hive PDK</h2>
+
+<pre><code>$ ant -Dhive.install.dir=../hive/build/dist test
+</code></pre>
+
+<h2>Install and Configurations</h2>
+
+<h3>hive-site.xml</h3>
+
+<pre><code>&lt;property&gt;
+    &lt;name&gt;hive.aux.jars.path&lt;/name&gt;
+    &lt;value&gt;file:///path/to/nexr-hive-udf-[VERSION].jar&lt;/value&gt;
+&lt;/property&gt;
+</code></pre>
+
+<h3>Registering the UDFs</h3>
+
+<pre><code>hive&gt; add jar /path/to/nexr-hive-udf-[VERSION].jar;
+hive&gt; CREATE TEMPORARY FUNCTION nvl AS 'com.nexr.platform.hive.udf.GenericUDFNVL';
+hive&gt; CREATE TEMPORARY FUNCTION decode AS 'com.nexr.platform.hive.udf.GenericUDFDecode';
+hive&gt; CREATE TEMPORARY FUNCTION nvl2 AS 'com.nexr.platform.hive.udf.GenericUDFNVL2';
+hive&gt; CREATE TEMPORARY FUNCTION str_to_date AS 'com.nexr.platform.hive.udf.UDFStrToDate';
+hive&gt; CREATE TEMPORARY FUNCTION date_format AS 'com.nexr.platform.hive.udf.UDFDateFormat';
+hive&gt; CREATE TEMPORARY FUNCTION to_char AS 'com.nexr.platform.hive.udf.UDFToChar';
+hive&gt; CREATE TEMPORARY FUNCTION instr4 AS 'com.nexr.platform.hive.udf.GenericUDFInstr';
+hive&gt; CREATE TEMPORARY FUNCTION chr AS 'com.nexr.platform.hive.udf.UDFChr';
+hive&gt; CREATE TEMPORARY FUNCTION last_day AS 'com.nexr.platform.hive.udf.UDFLastDay';
+hive&gt; CREATE TEMPORARY FUNCTION greatest AS 'com.nexr.platform.hive.udf.GenericUDFGreatest';
+hive&gt; CREATE TEMPORARY FUNCTION to_number AS 'com.nexr.platform.hive.udf.GenericUDFToNumber';
+hive&gt; CREATE TEMPORARY FUNCTION trunc AS 'com.nexr.platform.hive.udf.GenericUDFTrunc';
+hive&gt; CREATE TEMPORARY FUNCTION rank AS 'com.nexr.platform.hive.udf.GenericUDFRank';
+hive&gt; CREATE TEMPORARY FUNCTION row_number AS 'com.nexr.platform.hive.udf.GenericUDFRowNumber';
+hive&gt; CREATE TEMPORARY FUNCTION sysdate AS 'com.nexr.platform.hive.udf.UDFSysDate';
+hive&gt; CREATE TEMPORARY FUNCTION populate AS 'com.nexr.platform.hive.udf.GenericUDTFPopulate';
+hive&gt; CREATE TEMPORARY FUNCTION dedup AS 'com.nexr.platform.hive.udf.GenericUDAFDedup';
+hive&gt; CREATE TEMPORARY FUNCTION lnnvl AS 'com.nexr.platform.hive.udf.GenericUDFLnnvl';
+hive&gt; CREATE TEMPORARY FUNCTION substr AS 'com.nexr.platform.hive.udf.UDFSubstrForOracle';
+</code></pre>
+
+<h2>Usage of Hive UDFs</h2>
+
+<p>See the details at <a href="https://github.com/nexr/hive-udf/wiki">Project Wiki</a>.</p>
+
+<h2>References</h2>
+
+<ul>
+<li><a href="http://hive.apache.org/">Apache Hive</a></li>
+<li><a href="http://docs.oracle.com/cd/B28359_01/server.111/b28286/functions001.htm#i88893">Oracle 11g SQL Functions</a></li>
+</ul>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Hive UDFs maintained by <a href="https://github.com/nexr">nexr</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
