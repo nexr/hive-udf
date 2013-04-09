@@ -49,8 +49,10 @@ public class UDFStrToDate extends UDF {
     private final SimpleDateFormat standardFormatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
     private final SimpleDateFormat formatter = new SimpleDateFormat();
     private final Calendar calendar = Calendar.getInstance();
-    
+
     public UDFStrToDate() {
+      standardFormatter.setLenient(false);
+      formatter.setLenient(false);
     }
     
     Text result = new Text();

@@ -59,7 +59,9 @@ public class UDFLastDay extends UDF {
 	private final SimpleDateFormat standardFormatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 	private final Calendar calendar = Calendar.getInstance();
 
-	public UDFLastDay() { }
+	public UDFLastDay() {
+    standardFormatter.setLenient(false);
+  }
 
 	Text result = new Text();
 

@@ -61,6 +61,8 @@ public class UDFDateFormat extends UDF {
 	private final SimpleDateFormat formatter = new SimpleDateFormat();
 	
 	public UDFDateFormat() {
+    standardFormatter.setLenient(false);
+    formatter.setLenient(false);
 	}
 
 	Text result = new Text();

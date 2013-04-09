@@ -89,6 +89,8 @@ public class UDFToChar extends UDF {
 	private Text lastPatternText = new Text();
 
 	public UDFToChar() {
+    standardFormatter.setLenient(false);
+    formatter.setLenient(false);
 	}
 
 	public Text evaluate(NullWritable i) {

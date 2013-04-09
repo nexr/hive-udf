@@ -52,6 +52,11 @@ public class UDFSysDate extends UDF{
 	private final SimpleDateFormat stdFormatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 	private final SimpleDateFormat formatter = new SimpleDateFormat();
 	  private final Calendar calendar = Calendar.getInstance();
+
+  public UDFSysDate() {
+    stdFormatter.setLenient(false);
+    formatter.setLenient(false);
+  }
 	  
 	Text result= new Text();
 	public Text evaluate() {
