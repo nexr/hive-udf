@@ -8,7 +8,7 @@
 	<description>nexr-hive-udf</description>
 
 	<properties>
-		<hadoop.version>0.20.2-cdh3u2</hadoop.version>
+		<hadoop.version>0.20.2</hadoop.version>
 		<hive.version>0.9.0</hive.version>
 	</properties>
 
@@ -38,7 +38,7 @@
 		<dependency>
 			<groupId>javax.jdo</groupId>
 			<artifactId>jdo2-api</artifactId>
-			<version>2.3-ec</version>
+			<version>2.3-eb</version>
 		</dependency>
 		<dependency>
 			<groupId>commons-logging</groupId>
