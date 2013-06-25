@@ -8,6 +8,7 @@
 	<description>nexr-hive-udf</description>
 
 	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<hadoop.version>0.20.2</hadoop.version>
 		<hive.version>0.9.0</hive.version>
 	</properties>
