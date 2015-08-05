@@ -4,7 +4,7 @@
 NexR Hive UDFs is a collection of user defined functions for Hive.
 
 ## License
-Apache licensed.
+[Apache License Version 2.0](http://www.apache.org/licenses/LICENSE-2.0)
 
 ## Quickstart
     $ git clone https://github.com/nexr/hive-udf.git
