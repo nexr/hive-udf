@@ -35,6 +35,7 @@ NexR Hive UDFs is a collection of user defined functions for Hive.
     hive> CREATE TEMPORARY FUNCTION chr AS 'com.nexr.platform.hive.udf.UDFChr';
     hive> CREATE TEMPORARY FUNCTION last_day AS 'com.nexr.platform.hive.udf.UDFLastDay';
     hive> CREATE TEMPORARY FUNCTION greatest AS 'com.nexr.platform.hive.udf.GenericUDFGreatest';
+    hive> CREATE TEMPORARY FUNCTION least AS 'com.nexr.platform.hive.udf.GenericUDFLeast';
     hive> CREATE TEMPORARY FUNCTION to_number AS 'com.nexr.platform.hive.udf.GenericUDFToNumber';
     hive> CREATE TEMPORARY FUNCTION trunc AS 'com.nexr.platform.hive.udf.GenericUDFTrunc';
     hive> CREATE TEMPORARY FUNCTION rank AS 'com.nexr.platform.hive.udf.GenericUDFRank';
